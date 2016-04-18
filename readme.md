@@ -1,5 +1,3 @@
-Foodie Photo Sharing App
-TODO: Login with twitter
-TODO: User page
-TODO: Upload files
-TODO: Add tests
+Trello clone - 
+This repo is abandoned 
+The new project can be found under the trello-clone repo

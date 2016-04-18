@@ -11,10 +11,9 @@ var nib = require("nib");
 var passport = require("passport");
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
-var posts = require('./routes/posts');
+var boards = require('./routes/boards');
 
-mongoose.connect("mongodb://localhost/DATABASE");
+mongoose.connect("mongodb://localhost/trello_clone");
 
 var app = express();
 
@@ -50,8 +49,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', routes);
-app.use('/users', users);
-app.use('/posts', posts);
+app.use('/boards', boards);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

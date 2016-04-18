@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Photo = require("../models/photo.js");
+//var Post = require("../models/.js");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {  

@@ -1,5 +1,9 @@
 this["JST"] = this["JST"] || {};
 
+this["JST"]["boards_new"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<h1>New Board</h1><div class=\"form_photos_new\"><label for=\"title_input\">Name</label><input type=\"text\" name=\"name\" id=\"name_input\" /><a id=\"create_board\">Create Board</a></div>";
+},"useData":true});
+
 this["JST"]["index"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<ul id=\"photos_list\"></ul>";
 },"useData":true});
@@ -52,10 +56,6 @@ this["JST"]["photos_edit"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"mai
     + "</textarea><label for=\"tags_input_edit\">Categories<br /><small>Enter all tags separated by spaces</small></label><input type=\"text\" name=\"tags\" id=\"tags_input_edit\" value=\""
     + alias4(((helper = (helper = helpers.tags || (depth0 != null ? depth0.tags : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"tags","hash":{},"data":data}) : helper)))
     + "\" /><a class=\"save\">Save Photo</a></div>";
-},"useData":true});
-
-this["JST"]["photos_new"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<h1>New Photo</h1><div class=\"form_photos_new\"><label for=\"title_input\">Title</label><input type=\"text\" name=\"title\" id=\"title_input\" /><label for=\"image_input\">Image URL</label><input type=\"url\" name=\"image\" id=\"image_input\" /><label for=\"body\">Body</label><textarea type=\"text\" name=\"body\" id=\"body_input\" /></textarea><label for=\"tags_input\">Categories<br /><small>Enter all tags separated by a space</small></label><input type=\"text\" name=\"tags\" id=\"tags_input\" /><a id=\"create_photo\">Create Photo</a></div>";
 },"useData":true});
 
 this["JST"]["photos_show"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {

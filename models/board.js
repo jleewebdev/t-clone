@@ -1,14 +1,8 @@
 var mongoose = require('mongoose');
 
 // Photo Schema
-var postSchema = mongoose.Schema({
-  title: {
-    type: String
-  },
-  image: { 
-    type: String
-  },
-  body: {
+var boardSchema = mongoose.Schema({
+  name: {
     type: String
   },
   author: {
@@ -18,12 +12,11 @@ var postSchema = mongoose.Schema({
     type: String
   },
   
-  tags: [String],
   created_at: {
     type: Date,
     default: Date.now
   }
 });
 
-var Post = module.exports = mongoose.model('Post', postSchema);
+var Board = module.exports = mongoose.model('Board', boardSchema);
 

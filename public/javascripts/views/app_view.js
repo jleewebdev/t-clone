@@ -1,22 +1,14 @@
 App.AppView = Backbone.View.extend({
   el: $("main"),
-  page: $("#page"),
+
+  template: App.templates["index_view"],
 
   initialize: function() {
-    this.collection = new App.Photos();
-
-    if (this.collection.length < 1) {
-      this.collection.fetch().done(function(){
-        new App.NavView();
-      });
-    } else {
-      new App.NavView();
-    }
-
+    console.log("App started");
+    this.render();
   },
 
   render: function() {
+    console.log("rendering app_view")
   }
-
-
-});
+})

@@ -1,15 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var User = require("../models/user.js");
+var Post = require("../models/post.js");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {  
   res.render('index', { title: 'Foodie' });
 });
 
-router.get("/:user", function(req, res, next) {
-
-  res.send("User is " + req.params.user)
+router.get("/new", function(req, res, next) {
+  res.send("create new board")
 });
 
 
